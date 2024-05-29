@@ -77,6 +77,9 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 
 // Use the employee routes for any endpoint starting with /employees
 app.use('/employees', employeeRoutes);
+app.use("/",(req,res)=>{
+    res.send("Server is Running")
+})
 
 // Start the server
 app.listen(PORT, () => {
