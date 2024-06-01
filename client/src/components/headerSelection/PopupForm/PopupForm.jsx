@@ -44,11 +44,11 @@ const PopupForm = ({ onClose, loggedIn, setLoggedIn }) => {
             <input type='number' id="phoneNo" name="phoneNo" placeholder='please enter your number' value={formData.phoneNo} onChange={handleChange} />
           </div>
           {
-            formData.name==="admin" ?<Link to="/components/AllData/AllData">
+            formData.name.toLowerCase()==="admin" ?<Link to="/components/AllData/AllData">
             <button type="submit" onClick={formClose}>Submit</button>
-          </Link>:<Link to="/components/AllData/AllUserData">
+          </Link> : formData.name.toLowerCase()==="user"? <Link to="/components/AllData/AllUserData">
             <button type="submit" onClick={formClose}>Submit</button>
-          </Link>
+          </Link>:" "
           }
           
         </form>

@@ -26,7 +26,6 @@ const AllUserData = () => {
     // Ensure the numeric fields are numbers
     const dataToSubmit = {
       ...formData,
-      userNo: Number(formData.userNo),
       earn: Number(formData.earn),
       expense: Number(formData.expense)
     };
@@ -78,7 +77,7 @@ const AllUserData = () => {
           <div className="form-group">
             <label htmlFor="userNo">Vehicle Number:</label>
             <input
-              type="number"
+              type="text"
               id="userNo"
               name="userNo"
               value={formData.userNo}

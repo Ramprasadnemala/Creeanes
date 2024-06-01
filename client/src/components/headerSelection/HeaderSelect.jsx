@@ -19,7 +19,7 @@ const HeaderSelect = () => {
         <>
             <nav className="navbar2001">
                 <div className="nav-logo2001">
-                    {/* <span><img src={crean} alt='crean' style={{ height: "50px", width: "70px", borderRadius: "10px" }} /></span> */}
+                    {/* <span><img src={crean} 22alt='crean' style={{ height: "50px", width: "70px", borderRadius: "10px" }} /></span> */}
                     <Link to="./" style={{ color: '#fff',textDecoration:"none",cursor:"pointer" }}>
                     <span>FRIENDS CRANES</span>
                     </Link>
