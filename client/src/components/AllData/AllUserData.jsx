@@ -16,7 +16,7 @@ const AllUserData = () => {
     const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
-      [name]: (name === 'userNo' || name === 'earn' || name === 'expenses') ? Number(value) : value
+      [name]: (name === 'earn' || name === 'expenses') ? Number(value) : value
     }));
   };
 
